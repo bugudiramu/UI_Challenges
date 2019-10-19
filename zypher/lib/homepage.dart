@@ -295,8 +295,12 @@ class Authors extends StatelessWidget {
                                 "${authors[index]['authorImageURL']}"),
                             // radius: 20.0,
                           ),
-                          Text(
-                            "${authors[index]['authorName']}",
+                          Container(
+                            child: Text(
+                              "${authors[index]['authorName']}",
+                              style: TextStyle(
+                                  fontSize: 11.0, fontWeight: FontWeight.w500),
+                            ),
                           ),
                         ],
                       ),
