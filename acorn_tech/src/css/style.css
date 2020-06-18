@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*,body,html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.landing{
+    display: flex;
+    justify-content: space-around;
+    background-color: #E9F6E8;
+    border-radius: 0 0 18% 0;
+    height: 90vh;
+}
+.heading{
+    color: #3A4953;
+    width: 50%;
+    margin-top: 7rem;
+    margin-left: 1rem;
+}
+.headingImg{
+    width: 45%;
+    overflow: hidden;
+}
+.heading  h1{
+    font-size: 64px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    
+}
+.heading .desc{
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+.heading button{
+    background-color: #41af4b;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 10px 30px;
+    text-align: center;
+    min-width: 60%;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+.heading button:hover{
+    background-color: #41bf4b;
+}
+
+/* RTR CSS */
+.rtr{
+    /* font-family: 'Lato', sans-serif; */
+    height: 90vh;
+    border-radius: 0 0 40% 0;
+    background-color: #B8E9B4;
+
+}
+.rtr h1{
+    text-align: center;
+    color: #3A4953;
+    font-size: 58px;
+    margin:0 auto;
+    padding: 30px 0;
+    max-width: 60%;
+}
+.rtr_flex{
+    display: flex;
+}
+.rtr_flex img{
+    height: 550px;
+    width: 50%;
+    margin-left: -7rem;
+}
+.rtr_desc{
+    width: 40%;
+    margin-left: 20px;
+}
+.rtr_desc p{
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #3A4953;
+    margin-bottom: 1.5rem;
+}
+.rtr_desc a{
+   text-decoration: none;
+   font-size: 18px;
+   color: blue;
+}
+
+/* Enterprise */
+.enterprise{
+    background-color: #D3EED2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+.enterprise_desc{
+    width: 40%;
+    
+}
+.enterprise_desc h1{
+    font-size: 45px;
+
+}
+.enterprise_desc p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #3A4953;
+    margin: 1.5rem 0;
+}
+.enterprise_desc button{
+    background-color: #41af4b;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 10px 50px;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.enterprise_desc button:hover{
+    background-color: #41bf4b;
+}
+
+@media (max-width:900px){
+    .landing{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 0;
+        padding-bottom: 1rem;
+        
+    }
+    .landing .headingImg{
+        width: 100%;
+        margin-top: -50px;
+    }
+    .headingImg img{
+        width: 130%;
+    }
+     .heading{
+        margin-top: 0;
+        margin-left: 0;
+        width: 90%;
+        text-align: center;
+    }
+    .landing .heading h1{
+        font-size: 30px;
+    }
+    .heading .desc{
+        font-size: 15px;
+        margin-bottom: 0.5rem;
+        
+    }
+    .heading button{
+        width: 100%;
+    }
+    /* RTR */
+    .rtr{
+        height: 90%;
+        padding: 40px 20px;
+    }
+    .rtr_flex{
+
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .rtr h1{
+        font-size: 40px;
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 20px;
+        font-weight: 900;
+    }
+    .rtr_desc{
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 1rem;
+    }
+    .rtr_desc p{
+        font-size: 18px;
+    }
+    .rtr_desc a{
+        font-size: 15px;
+    }
+    .rtr_flex img{
+        margin-left: -4rem;
+        width: 100%;
+        height: 300px;
+    }
+    /* Enterprise */
+    .enterprise{
+        display: flex;
+        height: 100%;
+        flex-direction: column-reverse;
+        padding: 1rem;
+        align-items: center;
+        text-align: center;
+        /* justify-content: center; */
+    }
+    .enterpriseImg img{
+        width: 90%;
+    }
+    .enterprise_desc{
+        margin: 0 1rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .enterprise_desc h1{
+        font-size: 30px;
+    
+    }
+    .enterprise_desc p{
+        font-size: 16px;
+        color: #3A4953;
+        /* margin: 1.5rem 0; */
+    }
+    .enterprise_desc button{
+        width: 100%;
+    }
+}
+
